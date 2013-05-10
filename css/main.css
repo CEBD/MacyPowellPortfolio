@@ -12,49 +12,48 @@
 
 .ch-grid
 {
-    margin:20px 0 0 0;
+    margin: 20px 0 0 0;
     padding: 0;
-    list-style:none;
-    display:block;
-    text-align:center;
-    width:100%;
+    list-style: none;
+    display: block;
+    text-align: center;
+    width: 100%;
 }
 
     .ch-grid:after,
     .ch-item:before
     {
         content: '';
-        display:table;
+        display: table;
     }
 
     .ch-grid:after
     {
-        clear:both;
+        clear: both;
     }
 
     .ch-grid li
     {
-        width:220px;
-        height:220px;
-        display:inline-block;
-        margin:20px;
+        width: 220px;
+        height: 220px;
+        display: inline-block;
+        margin: 20px;
     }
 
 .ch-item
 {
-    width:100%;
-    height:100%;
-    border-radius:50%;
-    overflow:hidden;
-    position:relative;
-    cursor:default;
-    box-shadow:
-        inset 0 0 0 16px rgba(225,225,225,0.6),
-    0 1px 2px rgba(0,0,0,0.1);
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    cursor: default;
+    box-shadow: inset 0 0 0 16px rgba(225,225,225,0.6), 0 1px 2px rgba(0,0,0,0.1);
     transition: all 0.4s ease-in-out;
 }
 
-.ch-info {
+.ch-info
+{
     position: absolute;
     background: rgba(63,147,147, 0.8);
     width: inherit;
@@ -66,75 +65,82 @@
     transform: scale(0);
 }
 
-.ch-info h3 {
-    color: #fff;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-size: 22px;
-    margin: 0 30px;
-    padding: 45px 0 0 0;
-    height: 60px; /*was 140px*/
-    font-family: 'Open Sans', Arial, sans-serif;
-    text-shadow: 
-        0 0 1px #fff, 
-        0 1px 2px rgba(0,0,0,0.3);
+    .ch-info h3
+    {
+        color: #fff;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-size: 22px;
+        margin: 0 30px;
+        padding: 45px 0 0 0;
+        height: 60px; /*was 140px*/
+        font-family: 'Open Sans', Arial, sans-serif;
+        text-shadow: 0 0 1px #fff, 0 1px 2px rgba(0,0,0,0.3);
+    }
+
+    .ch-info p
+    {
+        color: #fff;
+        padding: 10px 5px;
+        font-style: italic;
+        margin: 0 30px;
+        font-size: 12px;
+        border-top: 1px solid rgba(255,255,255,0.5);
+        opacity: 0;
+        transition: all 1s ease-in-out 0.4s;
+    }
+
+        .ch-info p a
+        {
+            display: block;
+            color: rgba(255,255,255,0.7);
+            font-style: normal;
+            font-weight: 700;
+            text-transform: uppercase;
+            font-size: 9px;
+            letter-spacing: 1px;
+            padding-top: 4px;
+            font-family: 'Open Sans', Arial, sans-serif;
+        }
+
+            .ch-info p a:hover
+            {
+                color: rgba(255,242,34, 0.8);
+            }
+
+.ch-item:hover
+{
+    box-shadow: inset 0 0 0 1px rgba(255,255,255,0.1), 0 1px 2px rgba(0,0,0,0.1);
 }
 
-.ch-info p {
-    color: #fff;
-    padding: 10px 5px;
-    font-style: italic;
-    margin: 0 30px;
-    font-size: 12px;
-    border-top: 1px solid rgba(255,255,255,0.5);
-    opacity: 0;
-    transition: all 1s ease-in-out 0.4s;
-}
+    .ch-item:hover .ch-info
+    {
+        transform: scale(1);
+        opacity: 1;
+    }
 
-.ch-info p a {
-    display: block;
-    color: rgba(255,255,255,0.7);
-    font-style: normal;
-    font-weight: 700;
-    text-transform: uppercase;
-    font-size: 9px;
-    letter-spacing: 1px;
-    padding-top: 4px;
-    font-family: 'Open Sans', Arial, sans-serif;
-}
- 
-.ch-info p a:hover {
-    color: rgba(255,242,34, 0.8);
-}
+        .ch-item:hover .ch-info p
+        {
+            opacity: 1;
+        }
 
-.ch-item:hover {
-    box-shadow: 
-        inset 0 0 0 1px rgba(255,255,255,0.1),
-        0 1px 2px rgba(0,0,0,0.1);
-}
-
-.ch-item:hover .ch-info {
-    transform: scale(1);
-    opacity: 1;
-}
-
-.ch-item:hover .ch-info p {
-    opacity: 1;
-}
-
-.ch-img-1 { 
+.ch-img-1
+{
     background-image: url(../img/macylogo.png);
 }
- 
-.ch-img-2 { 
+
+.ch-img-2
+{
     background-image: url(../img/blackpattern.png);
 }
- 
-.ch-img-3 { 
+
+.ch-img-3
+{
     background-image: url(../img/macypowell-logo.png);
 }
 
-.ch-img-4 { 
+.ch-img-4
+{
     background-image: url(../img/macylogo.png);
 }
 
@@ -146,26 +152,31 @@ html,
 button,
 input,
 select,
-textarea {
+textarea
+{
     color: #222;
 }
 
-body {
+body
+{
     font-size: 1em;
     line-height: 1.4;
 }
 
-::-moz-selection {
+::-moz-selection
+{
     background: #b3d4fc;
     text-shadow: none;
 }
 
-::selection {
+::selection
+{
     background: #b3d4fc;
     text-shadow: none;
 }
 
-hr {
+hr
+{
     display: block;
     height: 1px;
     border: 0;
@@ -174,21 +185,25 @@ hr {
     padding: 0;
 }
 
-img {
+img
+{
     vertical-align: middle;
 }
 
-fieldset {
+fieldset
+{
     border: 0;
     margin: 0;
     padding: 0;
 }
 
-textarea {
+textarea
+{
     resize: vertical;
 }
 
-.chromeframe {
+.chromeframe
+{
     margin: 0.2em 0;
     background: #ccc;
     color: #000;
@@ -200,11 +215,13 @@ textarea {
    Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
    ========================================================================== */
 
-body {
+body
+{
     font: 16px/26px Helvetica, Helvetica Neue, Arial;
 }
 
-.wrapper {
+.wrapper
+{
     width: 90%;
     margin: 0 5%;
 }
@@ -213,86 +230,96 @@ body {
     ALL: Orange Theme
    =================== */
 
-.header-container {
+.header-container
+{
     border-bottom: 20px solid #36756b;
 }
 
 .footer-container,
-.main aside {
+.main aside
+{
     border-top: 20px solid #36756b;
 }
 
 .header-container,
 .footer-container,
-.main aside {
+.main aside
+{
     background: #67b9ad;
 }
 
-.title {
+.title
+{
     color: black;
     font-family: 'BlessedDay';
     font-size: 7em;
-    font-weight:normal;
+    font-weight: normal;
     margin: 0.43em 0em 0em 0.7em;
-    display:inline-block;
+    display: inline-block;
 }
 
 .logo
 {
-    float: left;
-    margin: 0.2em 0em;
-    /*display:none;*/
+    /*float: left;
+    margin: 0.2em 0em;*/
+    display: none;
 }
 
 /* ==============
     MOBILE: Menu
    ============== */
 
-nav ul {
+nav ul
+{
     margin: 0;
     padding: 0;
 }
 
-nav a {
+nav a
+{
     display: block;
     margin-bottom: 10px;
     padding: 15px 0;
-
     text-align: center;
     text-decoration: none;
     font-weight: bold;
-
     color: white;
     background: #439185;
 }
 
-nav a:hover,
-nav a:visited {
-    color: white;
-}
+    nav a:hover,
+    nav a:visited
+    {
+        color: white;
+    }
 
-nav a:hover {
-    text-decoration: underline;
-}
+    nav a:hover
+    {
+        text-decoration: underline;
+    }
 
 /* ==============
     MOBILE: Main
    ============== */
 
-.main {
+.main
+{
     padding: 30px 0;
 }
 
-.main article h1 {
-    font-size: 2em;
-}
+    .main article h1
+    {
+        font-size: 2em;
+    }
 
-.main aside {
-    color: white;
-    padding: 0px 5% 10px;
-}
+    .main aside
+    {
+        color: white;
+        padding: 0px 5% 10px;
+    }
 
-.footer-container footer {
+.footer-container footer
+{
     color: white;
     padding: 20px 0;
 }
@@ -301,7 +328,8 @@ nav a:hover {
     ALL: IE Fixes
    =============== */
 
-.ie7 .title {
+.ie7 .title
+{
     padding-top: 20px;
 }
 
@@ -327,13 +355,42 @@ nav a:hover {
    Media Queries
    ========================================================================== */
 
-@media only screen and (min-width: 480px) {
+@media only screen and (max-width:479px)
+{
+    .title
+    {
+        font-size: 7em;
+        line-height: 0.56em;
+        min-width:61%;
+        margin: 0.34em 0em 0em 0.2em;
+    }
+}
 
-/* ====================
+
+@media only screen and (min-width: 480px)
+{
+
+    /* ====================
     INTERMEDIATE: Menu
    ==================== */
 
-    nav a {
+    /*.title
+    {
+        background-color:red;
+        font-size: 6em;
+        margin: 0.3em 0em 0em 0.5em;
+        line-height: 0.5em;
+    }*/
+
+    .title
+    {
+        font-size: 7em;
+        margin: 0.3em 0em 0em 0.2em;
+    }
+
+
+    nav a
+    {
         float: left;
         width: 27%;
         margin: 0 1.7%;
@@ -341,82 +398,110 @@ nav a:hover {
         margin-bottom: 0;
     }
 
-    nav li:first-child a {
+    nav li:first-child a
+    {
         margin-left: 0;
     }
 
-    nav li:last-child a {
+    nav li:last-child a
+    {
         margin-right: 0;
     }
 
     .logo
     {
-        display:none;
+        display: none;
     }
 
-/* ========================
+
+
+    /* ========================
     INTERMEDIATE: IE Fixes
    ======================== */
 
-    nav ul li {
+    nav ul li
+    {
         display: inline;
     }
 
-    .oldie nav a {
+    .oldie nav a
+    {
         margin: 0 0.7%;
     }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and /*(max-width:881px) and*/ (min-width: 768px)
+{
 
-/* ====================
+    /* ====================
     WIDE: CSS3 Effects
    ==================== */
 
     .header-container,
-    .main aside {
+    .main aside
+    {
         -webkit-box-shadow: 0 5px 10px #aaa;
-           -moz-box-shadow: 0 5px 10px #aaa;
-                box-shadow: 0 5px 10px #aaa;
+        -moz-box-shadow: 0 5px 10px #aaa;
+        box-shadow: 0 5px 10px #aaa;
     }
 
-/* ============
+    /* ============
     WIDE: Menu
    ============ */
 
-    .title {
+    .title
+    {
         float: left;
+        font-size: 6em;
+        margin: 0.3em 0em 0em 0.7em;
+        line-height: 0.5em;
+        display: block;
     }
 
-    nav {
+    nav
+    {
         float: right;
         width: 38%;
     }
 
-/* ============
+    .logo
+    {
+        display: none;
+    }
+
+    /* ============
     WIDE: Main
    ============ */
 
-    .main article {
+    .main article
+    {
         float: left;
-        width: 57%;
+        width: 100%; /*57%;*/
     }
 
-    .main aside {
+    .main aside
+    {
         float: right;
         width: 28%;
     }
 }
 
-@media only screen and (min-width: 1140px) {
+@media only screen and (min-width: 1140px)
+{
 
-/* ===============
+    /* ===============
     Maximal Width
    =============== */
 
-    .wrapper {
+    .wrapper
+    {
         width: 1026px; /* 1140px - 10% for margins */
         margin: 0 auto;
+    }
+
+    .logo
+    {
+        display: none;
     }
 }
 
@@ -424,26 +509,30 @@ nav a:hover {
    Helper classes
    ========================================================================== */
 
-.ir {
+.ir
+{
     background-color: transparent;
     border: 0;
     overflow: hidden;
     *text-indent: -9999px;
 }
 
-.ir:before {
-    content: "";
-    display: block;
-    width: 0;
-    height: 150%;
-}
+    .ir:before
+    {
+        content: "";
+        display: block;
+        width: 0;
+        height: 150%;
+    }
 
-.hidden {
+.hidden
+{
     display: none !important;
     visibility: hidden;
 }
 
-.visuallyhidden {
+.visuallyhidden
+{
     border: 0;
     clip: rect(0 0 0 0);
     height: 1px;
@@ -454,31 +543,36 @@ nav a:hover {
     width: 1px;
 }
 
-.visuallyhidden.focusable:active,
-.visuallyhidden.focusable:focus {
-    clip: auto;
-    height: auto;
-    margin: 0;
-    overflow: visible;
-    position: static;
-    width: auto;
-}
+    .visuallyhidden.focusable:active,
+    .visuallyhidden.focusable:focus
+    {
+        clip: auto;
+        height: auto;
+        margin: 0;
+        overflow: visible;
+        position: static;
+        width: auto;
+    }
 
-.invisible {
+.invisible
+{
     visibility: hidden;
 }
 
 .clearfix:before,
-.clearfix:after {
+.clearfix:after
+{
     content: " ";
     display: table;
 }
 
-.clearfix:after {
+.clearfix:after
+{
     clear: both;
 }
 
-.clearfix {
+.clearfix
+{
     *zoom: 1;
 }
 
@@ -486,8 +580,10 @@ nav a:hover {
    Print styles
    ========================================================================== */
 
-@media print {
-    * {
+@media print
+{
+    *
+    {
         background: transparent !important;
         color: #000 !important; /* Black prints faster: h5bp.com/s */
         box-shadow: none !important;
@@ -495,15 +591,18 @@ nav a:hover {
     }
 
     a,
-    a:visited {
+    a:visited
+    {
         text-decoration: underline;
     }
 
-    a[href]:after {
-        content: " (" attr(href) ")";
-    }
+        a[href]:after
+        {
+            content: " (" attr(href) ")";
+        }
 
-    abbr[title]:after {
+    abbr[title]:after
+    {
         content: " (" attr(title) ")";
     }
 
@@ -513,42 +612,50 @@ nav a:hover {
 
     .ir a:after,
     a[href^="javascript:"]:after,
-    a[href^="#"]:after {
+    a[href^="#"]:after
+    {
         content: "";
     }
 
     pre,
-    blockquote {
+    blockquote
+    {
         border: 1px solid #999;
         page-break-inside: avoid;
     }
 
-    thead {
+    thead
+    {
         display: table-header-group; /* h5bp.com/t */
     }
 
     tr,
-    img {
+    img
+    {
         page-break-inside: avoid;
     }
 
-    img {
+    img
+    {
         max-width: 100% !important;
     }
 
-    @page {
+    @page
+    {
         margin: 0.5cm;
     }
 
     p,
     h2,
-    h3 {
+    h3
+    {
         orphans: 3;
         widows: 3;
     }
 
     h2,
-    h3 {
+    h3
+    {
         page-break-after: avoid;
     }
 }
